@@ -1,20 +1,15 @@
 # Classic Arcade Game Clone Project
 
-## Table of Contents
 
-- [Instructions](#instructions)
-- [Contributing](#contributing)
+## Installation Instructions
 
-## Instructions
+1. Clone / download this repository to your local machine.
+2. Open the index.html file with a web browser of your choice.
+3. The game has now launched, have fun!
 
-Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
+## Gameplay Instructions
 
-Make sure the functions you write are **object-oriented** - either class functions (like `Player` and `Enemy`) or class prototype functions such as `Enemy.prototype.checkCollisions`. Also make sure that the keyword `this` is used appropriately within your class and class prototype functions to refer to the object the function is called upon.
-
-Your **README.md** file should be updated with instructions on both how to 1. Run and 2. Play your arcade game.
-
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+1. Use the arrow keys on your keyboard to move your character up, down, left, or right.
+2. The goal of the game is to advance to the top of grid.
+3. If you make contact with an enemey, you will be sent back to the starting position.
+4. If you successfully reach the goal line, the game difficulty will be increased and you will be placed at the starting position to try the new difficulty.
