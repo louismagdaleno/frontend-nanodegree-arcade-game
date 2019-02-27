@@ -98,7 +98,7 @@ class Player extends Element{
     }
 
     update () {
-        player.checkWin();
+        this.checkWin();
     }
    
     checkWin (){
@@ -106,9 +106,9 @@ class Player extends Element{
         // check for player reaching top of canvas and winning the game
         // if player wins, add 1 to the score and level
         // pass score as an argument to the increaseDifficulty function
-        if (player.y + 63 <= 0) {
-            player.x = 202.5;
-            player.y = 383;
+        if (this.y + 63 <= 0) {
+            this.x = 202.5;
+            this.y = 383;
     
             score++;
             gameLevel++;
@@ -121,16 +121,16 @@ class Player extends Element{
         if (!pause || keyPress === "space") {
             switch (keyPress) {
                 case 'left':
-                    player.x -= player.speed;
+                    this.x -= this.speed;
                     break;
                 case 'right':
-                    player.x += player.speed;
+                    this.x += this.speed;
                     break;
                 case 'up':
-                    player.y -= player.speed - 20;
+                    this.y -= this.speed - 20;
                     break;
                 case 'down':
-                    player.y += player.speed - 20;
+                    this.y += this.speed - 20;
                     break;
                 case 'space':
                     pauseGame();
@@ -145,14 +145,14 @@ class Player extends Element{
     
         // check if player runs into left, bottom, or right canvas walls
         // prevent player from moving beyond canvas wall boundaries
-        if (player.y > 383) {
-            player.y = 383;
+        if (this.y > 383) {
+            this.y = 383;
         }
-        if (player.x > 402.5) {
-            player.x = 402.5;
+        if (this.x > 402.5) {
+            this.x = 402.5;
         }
-        if (player.x < 2.5) {
-            player.x = 2.5;
+        if (this.x < 2.5) {
+            this.x = 2.5;
         }
     
     };
